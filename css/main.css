@@ -35,10 +35,11 @@ nav h2 {
 nav ul {
     list-style: none;
     display: flex;
+    gap: 30px;
 }
 
 nav li {
-    margin-left: 20px;
+    margin: 0;
 }
 
 nav a {
@@ -80,16 +81,17 @@ section {
     text-align: center;
 }
 
-/* --- Textarea --- */
-textarea {
-    width: 100%;
-    height: 120px;
+/* --- Input --- */
+input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
     margin: 15px 0;
-    padding: 15px;
     border-radius: 10px;
     border: none;
     outline: none;
     font-size: 16px;
+    text-align: center;
 }
 
 /* --- Buttons --- */
@@ -108,4 +110,9 @@ button {
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffcc;
+}
+
+/* --- Feedback --- */
+#feedback {
+    font-size: 18px;
 }
